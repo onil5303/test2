@@ -2,10 +2,10 @@ trigger:
 - master
 
 pool:
-  name: "Default"
+  name: Default
   demands:
     - agent.name -equals ONEL
-
+    - maven
 
 steps:
 - task: Maven@3
